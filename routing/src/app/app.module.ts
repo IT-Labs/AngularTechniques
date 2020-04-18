@@ -11,6 +11,7 @@ import { MaterialModule } from './material.module';
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ParamsDirective } from './directives/route-params.directive';
 
 @NgModule({
   declarations: [

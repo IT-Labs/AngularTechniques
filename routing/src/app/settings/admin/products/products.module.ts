@@ -1,3 +1,4 @@
+import { ParamsDirective } from './../../../directives/route-params.directive';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common'; 
 import { ProductsComponent } from './products/products.component'; 
@@ -12,7 +13,8 @@ import { ProductsSpecialComponent } from './products-special/products-special.co
   declarations: [
     ProductsComponent,
     DetailsComponent,
-    ProductsSpecialComponent
+    ProductsSpecialComponent,
+    ParamsDirective
   ],
   imports: [
     CommonModule,

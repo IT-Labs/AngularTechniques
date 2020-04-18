@@ -8,7 +8,7 @@ import { AuthGuard } from './auth.guard';
 import { CanDeactivateGuard } from './can-deactivate.guard';
 
 const routerOptions: ExtraOptions = { 
-  enableTracing: true ,
+  // enableTracing: true ,
   useHash: false,
   scrollPositionRestoration: 'enabled',
   anchorScrolling: 'enabled',
