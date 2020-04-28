@@ -1,0 +1,21 @@
+<mat-accordion class="example-headers-align">
+    <mat-expansion-panel *ngFor="let item of results ;  let i = index ; first as isFirst ; last as isLast" [expanded]="step === i" (opened)="setStep(i)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{item}}
+        </mat-panel-title>
+        <mat-panel-description> 
+          description
+        </mat-panel-description>
+      </mat-expansion-panel-header>  
+       <div class="accordion-content">
+         some content
+       </div>
+      <mat-action-row>
+        <button mat-button color="warn" (click)="prevStep()" *ngIf="!isFirst || isLast">Previous</button>
+        <button mat-button color="primary" (click)="nextStep()" *ngIf="isFirst || !isLast">Next</button> 
+        <button mat-button color="primary" (click)="nextStep()" *ngIf="isLast">End</button> 
+      </mat-action-row>
+    </mat-expansion-panel> 
+  </mat-accordion>  
+   
