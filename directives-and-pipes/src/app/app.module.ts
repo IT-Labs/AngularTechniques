@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { CommonModule } from '@angular/common'; 
 import { AccordionComponent } from './accordion/accordion.component';
+import { OnlyForSreenModule } from './directives/structural-directives/only-for-screen/only-for-screen.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AccordionComponent } from './accordion/accordion.component';
     AppRoutingModule,
     CommonModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    OnlyForSreenModule
   ],
   providers: [],
   bootstrap: [AppComponent]

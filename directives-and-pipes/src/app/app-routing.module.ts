@@ -28,7 +28,7 @@ const routes: Routes = [
     component: DirectivesComponent,
     children: [{
       path: 'attribute',
-      component: AttributeComponent,
+      component: AttributeComponent
     },
     {
       path: 'structural',

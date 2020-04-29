@@ -1,3 +1,26 @@
-<p>
-  built-in works!
-</p>
+
+
+  <mat-accordion class="example-headers-align">
+          <mat-expansion-panel [expanded]="true"  hideToggle>
+                  <mat-expansion-panel-header>
+                          <mat-panel-title>
+                                  <h2>common</h2>
+                          </mat-panel-title>
+                  </mat-expansion-panel-header>
+                  <div class="accordion-content">
+
+                          <div class="row">
+
+                                  <div class="col-md-3" *ngFor="let item of commonPipes">
+
+                                          <div class="card" [ngClass]="item.class">
+                                                  <div class="card-body "> 
+                                                          <a [href]="item.url" target="_blank"> {{item.label}}</a>
+                                                  </div>
+                                          </div>
+                                  </div>
+                          </div>
+                  </div>
+          </mat-expansion-panel> 
+  </mat-accordion>
+ 

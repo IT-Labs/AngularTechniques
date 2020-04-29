@@ -1,3 +1,23 @@
-<app-accordion [results]="data">
-
-</app-accordion>
+<mat-accordion class="example-headers-align">
+    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Attribute Directives
+        </mat-panel-title>
+        <mat-panel-description> 
+          Attribute Directives are used as attributes of elements.
+        </mat-panel-description>
+      </mat-expansion-panel-header>  
+       <div class="accordion-content">
+         There are a number of build in angular attributes directives:
+          I would further more group each directive under a parent element because there a wide variety of each section respectively.
+          
+       </div>
+      <mat-action-row>
+        <!-- <button mat-button color="warn" (click)="prevStep()" *ngIf="!isFirst || isLast">Previous</button> -->
+        <button mat-button color="primary" (click)="nextStep()">Next</button> 
+        <!-- <button mat-button color="primary" (click)="nextStep()" *ngIf="isLast">End</button>  -->
+      </mat-action-row>
+    </mat-expansion-panel> 
+  </mat-accordion>  
+   

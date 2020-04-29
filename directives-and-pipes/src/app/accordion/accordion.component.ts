@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ContentChild, TemplateRef } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -11,8 +12,9 @@ export class AccordionComponent implements OnInit {
   @Input() results;
  
   step = 0;
-
-  constructor() { }
+  @ContentChild('contentTemplate', {static: false}) contentTemplateRef: TemplateRef<any>;
+  
+  constructor(private router: Router) { }
   ngOnInit(): void {
 
   }
@@ -22,10 +24,10 @@ export class AccordionComponent implements OnInit {
   }
 
   nextStep() {
-    this.step++;
+    this.step++; 
   }
 
   prevStep() {
-    this.step--;
+    this.step--; 
   }
 }
