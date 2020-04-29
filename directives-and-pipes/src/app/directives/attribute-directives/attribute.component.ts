@@ -8,7 +8,7 @@ export class AttributeComponent implements OnInit {
   data = ['test1', 'test2', 'test3', 'test4'];
   step = 0;
   constructor() { }
-
+  color: string;
   ngOnInit() {
   } 
 

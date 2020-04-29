@@ -1,9 +1,7 @@
-import { ConfigService } from './../../../config.service';
+import { ConfigService, ScreenType, IConfig } from './../../../config.service';
+ 
 
-import { IConfig } from './screen-config.model';
-
-import { Directive, ElementRef, Input, TemplateRef, ViewContainerRef, Inject, AfterViewInit, OnInit, OnDestroy } from '@angular/core';
-import { ScreenType } from './screen-type.enum';
+import { Directive, ElementRef, Input, TemplateRef, ViewContainerRef, Inject, AfterViewInit, OnInit, OnDestroy } from '@angular/core'; 
 import { combineLatest, Subject , Observable, fromEvent, BehaviorSubject } from 'rxjs';
 import { takeUntil, map, distinctUntilChanged, debounceTime } from 'rxjs/operators';
 

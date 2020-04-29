@@ -1,4 +1,3 @@
-import { IConfig } from './only-for-screen/screen-config.model';
 import { Injectable } from '@angular/core'; 
 import { BehaviorSubject, Observable } from 'rxjs';
  
@@ -28,4 +27,20 @@ export class ConfigService {
     tablet: 900
   };
   
+}
+
+
+export interface IConfig {
+  mobile: number;
+  tablet: number;
+}
+
+export const DEFAULT_CONFIG : IConfig = {
+  mobile: 600 , 
+  tablet: 900
+}
+export const enum ScreenType {
+  DESKTOP = 'desktop' , 
+  TABLET = 'tablet' , 
+  MOBILE = 'mobile' 
 }
