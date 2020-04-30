@@ -23,6 +23,7 @@ import { AccordionComponent } from './directives/component-directives/accordion/
 import { AccordionHeaderDirective } from './directives/component-directives/accordion/directives/accordion-header.directive';
 import { ExponentialStrengthPipe } from './pipes/custom/exponential-strength.pipe';
 import { ImpurePipe } from './pipes/custom/impure.pipe';
+import { GetRowClassPipe } from './pipes/custom/get-row-class.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { ImpurePipe } from './pipes/custom/impure.pipe';
     AccordionHeaderDirective,
     AccordionComponent,
     ExponentialStrengthPipe,
-    ImpurePipe
+    ImpurePipe,
+    GetRowClassPipe
   ],
   imports: [
     BrowserModule,

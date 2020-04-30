@@ -67,7 +67,9 @@
        <div class="row">
         <div class="col-md-12" *ngFor="let item of data ;  let i = index ;let odd=odd; trackBy: trackById">
           
-          <div class="alert" [ngClass]="getClass(i , odd , data.length)">
+          <!-- <div class="alert" [ngClass]="getClass(i , odd , data.length)"> -->
+            <div class="alert" [ngClass]='odd | getRowClass:i : data.length '>
+            
             {{item.label}} - Item
             <div *appNgForObject="let propertyName from item; let indexObject=index">
               [{{indexObject}}] {{propertyName}}: {{item[propertyName]}}
@@ -100,11 +102,12 @@
             (<label><input type="checkbox" checked (change)="hero.emotion = 'sad'">Sad</label>)
             (<label><input type="checkbox" checked (change)="hero.emotion = 'confused'">Confused</label>)
           </div>
+           
           <div [ngSwitch]="hero?.emotion">
             <div   *ngSwitchCase="'happy'"> Happy </div>
-            <div      *ngSwitchCase="'sad'"> Sad</div>
-            <div *ngSwitchCase="'confused'"> Confused</div>
-            <div  *ngSwitchDefault > Default</div>
+            <div   *ngSwitchCase="'sad'"> Sad</div>
+            <div   *ngSwitchCase="'confused'"> Confused</div>
+            <div   *ngSwitchDefault > Default</div>
           </div>
         </div>
        </div>
