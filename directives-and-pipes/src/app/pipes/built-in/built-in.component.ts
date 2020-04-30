@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { of } from 'rxjs';
 
 @Component({ 
   templateUrl: './built-in.component.html'
@@ -10,7 +11,10 @@ export class BuiltInComponent implements OnInit {
   ngOnInit() {
   }
 
-  
+  defaultValue = 22989559;
+  birthday = new Date(1988, 3, 15);
+
+  asyncDate = of(new Date(1988, 3, 15));
   commonPipesColor = 'bg-success'; 
   commonPipes = [
     {

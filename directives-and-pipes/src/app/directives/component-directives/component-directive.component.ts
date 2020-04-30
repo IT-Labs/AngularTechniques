@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({ 
   templateUrl: './component-directive.component.html',
+  styleUrls:['./component-directive.component.scss']
 })
 export class ComponentDirectiveComponent implements OnInit {
 
@@ -23,5 +24,9 @@ export class ComponentDirectiveComponent implements OnInit {
   prevStep() {
     this.step--;
   }
-  
+  accordionItems = [
+    {header: 'itay', content: 'content'},
+    {header: 'noaa', content: 'content'},
+    {header: 'eliran', content: 'content'}
+  ];
 }
