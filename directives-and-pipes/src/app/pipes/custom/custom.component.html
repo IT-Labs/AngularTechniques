@@ -12,4 +12,10 @@
     </p>
 
   </div>
+
+  <div class="col-md-12">
+    <div *ngFor="let person of (people | impureList:'isOld')">
+      {{person.name}}
+    </div>
+  </div>
 </div>

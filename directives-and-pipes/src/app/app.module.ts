@@ -22,6 +22,7 @@ import { AccordionContentDirective } from './directives/component-directives/acc
 import { AccordionComponent } from './directives/component-directives/accordion/accordion.component';
 import { AccordionHeaderDirective } from './directives/component-directives/accordion/directives/accordion-header.directive';
 import { ExponentialStrengthPipe } from './pipes/custom/exponential-strength.pipe';
+import { ImpurePipe } from './pipes/custom/impure.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,8 @@ import { ExponentialStrengthPipe } from './pipes/custom/exponential-strength.pip
     AccordionContentDirective,
     AccordionHeaderDirective,
     AccordionComponent,
-    ExponentialStrengthPipe
+    ExponentialStrengthPipe,
+    ImpurePipe
   ],
   imports: [
     BrowserModule,

@@ -13,4 +13,28 @@ export class CustomComponent implements OnInit {
   ngOnInit() {
   }
 
+  people = [{
+    name: 'Person' ,
+    isOld: true,
+  },
+  {
+    name: 'Person_1' ,
+    isOld: true,
+  },
+  {
+    name: 'Person_2' ,
+    isOld: true,
+  },
+  {
+    name: 'Person_3' ,
+    isOld: false,
+  },
+  {
+    name: 'Person_4' ,
+    isOld: false,
+  },
+  {
+    name: 'Person_5' ,
+    isOld: true,
+  }]
 }
